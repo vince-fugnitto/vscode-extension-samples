@@ -21,7 +21,7 @@ function updateDiagnostics(document: vscode.TextDocument, collection: vscode.Dia
 			code: '',
 			message: 'cannot assign twice to immutable variable `x`',
 			range: new vscode.Range(new vscode.Position(3, 4), new vscode.Position(3, 10)),
-			severity: vscode.DiagnosticSeverity.Error,
+			severity: vscode.DiagnosticSeverity.Information,
 			source: '',
 			relatedInformation: [
 				new vscode.DiagnosticRelatedInformation(new vscode.Location(document.uri, new vscode.Range(new vscode.Position(1, 8), new vscode.Position(1, 9))), 'first assignment to `x`')
